@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes_Encriptados</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body>
+    <h1>a</h1>
+    <h2>Codificador de mensajes</h2>
+    <div id="primerTexto">
+
+        <h5>Solo letras minusculas, sin tildes ni caracteres especiales.</h5>
+        <textarea placeholder="introduzca el mensaje" name="" id="mensaje" cols="60" rows="30" onkeyup="this.value=numeros(this.value)"></textarea>
+        <br>
+        <h5>Solo letras minusculas, sin tildes ni caracteres especiales.</h5>
+
+        <button class="btn" onclick="encriptar()" id="encriptar">Encriptar</button>
+        <button class="btn" onclick="desencriptar()" id="desencriptar">Desencriptar</button>
+    </div>
+    <div id="segundoTexto">   
+        <h5>Aqui se mostrara el mensaje encriptado o desencriptado.</h5>     
+        <textarea placeholder="No hay mensaje" id="mensajeResuelto" cols="60" rows="30" readonly="readonly"></textarea>        
+        <h5>Aqui se mostrara el mensaje encriptado o desencriptado.</h5> 
+    </div>    
+    <button class="btn" onclick="copiar()" id="copy">Copiar</button>    
+    <img id="doll" src="imagen/Muñeco.png" alt="">
+    <script src="codigos/codigo.js"></script>  
+</body>
+
+</html>
+
