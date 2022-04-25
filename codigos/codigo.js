@@ -6,8 +6,7 @@ var mensaje = "";
 
 function encriptar() {
     arreglo = [];
-    encriptado = [];
-    ocultarImagen();
+    encriptado = [];   
     mensaje = document.getElementById('mensaje').value;
     document.getElementById('mensaje').value = "";
     arreglo = toArreglo(mensaje);
@@ -59,8 +58,7 @@ function encriptacion(arreglo) {
 
 function desencriptar() {
     mensaje = document.getElementById('mensaje').value;
-    mensaje = desencriptacion(mensaje);
-    ocultarImagen();
+    mensaje = desencriptacion(mensaje);    
     document.getElementById('mensaje').value = "";
     document.getElementById('mensajeResuelto').value = mensaje;
 
@@ -81,13 +79,6 @@ function copiar() {
     var mensajeCopiado = document.getElementById('mensajeResuelto');
     mensajeCopiado.select();
     document.execCommand('copy');
-}
-
-function ocultarImagen() {
-
-    document.getElementById("doll").style.visibility = "hidden";
-    document.getElementById("mensajeResuelto").style.visibility = "none";
-
 }
 
 
